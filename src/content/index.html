@@ -26,13 +26,13 @@
           forget to have a glimpse at <a href="projects" class="link">my projects</a>. Currently I’m looking for a
           new challenges so if you have one - <a href="#contact" class="link">contact me</a> 😊
         </p>
-        <a class="header__mail link" href="mailto:bartosz.niesobski@gmail.com">bartosz.niesobski@gmail.com</a>
+        <a class="mail-link link" href="mailto:bartosz.niesobski@gmail.com">bartosz.niesobski@gmail.com</a>
       </header>
       <section id="skills" class="skills">
         <h2 class="skills__heading">My skills</h2>
         <section class="skills-section skills-section--wk">
-          <h3 class="skills-section__header skills-section__header--wk">Working knowledge</h3>
-          <ul class="skills-section__list skills-section__list--wk">
+          <h3 class="skills-section__header">Working knowledge</h3>
+          <ul class="skills-section__list">
             <li class="skills-section__list-item skills-section__list-item--wk">Semantic HTML5</li>
             <li class="skills-section__list-item skills-section__list-item--wk">Flexbox</li>
             <li class="skills-section__list-item skills-section__list-item--wk">Markdown</li>
@@ -45,8 +45,8 @@
           </ul>
         </section>
         <section class="skills-section skills-section--ks">
-          <h3 class="skills-section__header skills-section__header--ks">Know something about</h3>
-          <ul class="skills-section__list skills-section__list--ks">
+          <h3 class="skills-section__header">Know something about</h3>
+          <ul class="skills-section__list">
             <li class="skills-section__list-item skills-section__list-item--ks">JavaScript ES6+ features</li>
             <li class="skills-section__list-item skills-section__list-item--ks">CSS animations</li>
             <li class="skills-section__list-item skills-section__list-item--ks">Working with API</li>
@@ -57,8 +57,8 @@
           </ul>
         </section>
         <section class="skills-section skills-section--wtl">
-          <h3 class="skills-section__header skills-section__header--wtl">Want to learn</h3>
-          <ul class="skills-section__list skills-section__list--wtl">
+          <h3 class="skills-section__header">Want to learn</h3>
+          <ul class="skills-section__list ">
             <li class="skills-section__list-item skills-section__list-item--wtl">React JS</li>
             <li class="skills-section__list-item skills-section__list-item--wtl">Node.JS</li>
             <li class="skills-section__list-item skills-section__list-item--wtl">Electron</li>
@@ -71,28 +71,67 @@
       </section>
       <section id="projects" class="projects">
         <h2 class="projects__heading">Recent projects</h2>
-        <p class="projects__description"></p>
+        <p class="projects__description">I started my frontend developer path in 2019. Since then, I’ve built some projects. Here’s the list of the things I’ve done so far.</p>
         <ul class="projects__list">
           <li class="project">
-            <img src="" class="project__image"/>
-            <h4 class="project__heading">typescritp-blue</h4>
-            <p class="projects__description">Your source of typescritp color & logos</p>
+            <div class="project__content">
+              <img src="assets/img/github-logo.svg" class="project__image"/>
+              <h4 class="project__heading">typescritp-blue</h4>
+              <p class="project__description">Your source of typescritp color & logos</p>
+            </div>
             <div class="project__links">
-              <a class="project__link project__link--demo">Demo</a>
-              <a class="project__link project__link--github">Github</a>
+              <img src="assets/img/demo-link-icon.svg" class="project__icon" alt="Icon for demo link - shape of a monitor">
+              <a class="project__link project__link--demo" href="#">Demo</a>
+              <img src="assets/img/github-link-icon.svg" class="project__icon" alt="Icon for github link - shape resembling terminal icon">
+              <a class="project__link project__link--github" href="#">Github</a>
             </div>
           </li>
+          <li class="project">
+            <div class="project__content">
+              <img src="assets/img/github-logo.svg" class="project__image"/>
+              <h4 class="project__heading">typescritp-blue</h4>
+              <p class="project__description">Your source of typescritp color & logos</p>
+            </div>
+            <div class="project__links">
+              <img src="assets/img/demo-link-icon.svg" class="project__icon" alt="Icon for demo link - shape of a monitor">
+              <a class="project__link project__link--demo" href="#">Demo</a>
+              <img src="assets/img/github-link-icon.svg" class="project__icon" alt="Icon for github link - shape resembling terminal icon">
+              <a class="project__link project__link--github" href="#">Github</a>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__content">
+              <img src="assets/img/github-logo.svg" class="project__image"/>
+              <h4 class="project__heading">typescritp-blue</h4>
+              <p class="project__description">Your source of typescritp color & logos</p>
+            </div>
+            <div class="project__links">
+              <img src="assets/img/demo-link-icon.svg" class="project__icon" alt="Icon for demo link - shape of a monitor">
+              <a class="project__link project__link--demo" href="#">Demo</a>
+              <img src="assets/img/github-link-icon.svg" class="project__icon" alt="Icon for github link - shape resembling terminal icon">
+              <a class="project__link project__link--github" href="#">Github</a>
+            </div>
+          </li>            
+          
         </ul>
       </section>
       <section id="contact" class="contact">
-        <h2 class="contact__heading">Contact me</h2>
-        <p class="description">I’m open for new opportunities. If you have one for me we should talk!</p>
-        <div class="contact__socials">
-          <a class="contact__social-link"></a>
-          <a class="contact__social-link"></a>
-          <a class="contact__social-link"></a>
+        <div class="contact__heading-container">
+          <h2 class="contact__heading">Contact me</h2>
         </div>
-        <a class="contact__mail">bartosz.niesobski@gmail.com</a>
+        <p class="contact__description">I’m open for new opportunities. If you have one for me we should talk!</p>
+        <div class="contact__socials">
+          <a class="contact__social-link">
+            <img src="assets/img/fb-social-icon.svg" class="contact__link-icon--fb" alt="Icon for facebook link with facebook logo.">
+          </a>
+          <a class="contact__social-link">
+            <img src="assets/img/gh-social-icon.svg" class="contact__link-icon--gh" alt="Icon for github link with github logo.">
+          </a>
+          <a class="contact__social-link">
+            <img src="assets/img/ig-social-icon.svg" class="contact__link-icon--ig" alt="Icon for instagram link with instagram logo.">
+          </a>
+        </div>
+        <a class="mail-link link" href="mailto:bartosz.niesobski@gmail.com">bartosz.niesobski@gmail.com</a>
       </section>
     </main>
     <script src="js/main.js"></script>
