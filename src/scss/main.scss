@@ -14,6 +14,9 @@ html {
 
 body {
   border: 16px solid #171f3f;
+  @media (max-width: $phone-max-size) {
+    border: none;
+  }
 }
 
 .main {
@@ -23,9 +26,20 @@ body {
 
 .header {
   padding: 128px 128px 0 128px;
-  width: 55%;
+  width: 60%;
   margin-bottom: 200px;
-  min-width: 600px;
+
+  @media (max-width: $small-desktop-max-size) {
+    width: 900px;
+  }
+  @media (max-width: $tablet-max-size) {
+    padding: 64px 64px 0 64px;
+    width: 100%;
+  }
+  @media (max-width: $phone-max-size) {
+    padding: 64px 16px 0 16px;
+    margin-bottom: 120px;
+  }
 
   &__image {
     width: 120px;
@@ -33,13 +47,28 @@ body {
     border-radius: 50%;
     padding: 5px;
     border: 5px solid #cbd2d9;
+    margin-bottom: 32px;
+    @media (max-width: $phone-max-size) {
+      width: 80px;
+      height: 80px;
+      padding: 3px;
+      border: 3px solid #cbd2d9;
+      margin-bottom: 16px;
+    }
   }
   &__heading {
     margin-bottom: 16px;
+    margin-top: 0;
     font-weight: 600;
     font-size: 40px;
     line-height: 56px;
     color: #171f3f;
+
+    @media (max-width: $phone-max-size) {
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 8px;
+    }
   }
   &__description {
     padding-right: 100px;
@@ -48,6 +77,13 @@ body {
     line-height: 36px;
     color: #52606d;
     margin-bottom: 60px;
+
+    @media (max-width: $phone-max-size) {
+      font-size: 14px;
+      line-height: 26px;
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -57,6 +93,11 @@ body {
   text-decoration: none;
   padding-bottom: 8px;
   border-bottom: 2px solid #0593fb;
+
+  @media (max-width: $phone-max-size) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .link {
@@ -66,6 +107,12 @@ body {
 
 .skills {
   padding: 0 128px;
+  @media (max-width: $tablet-max-size) {
+    padding: 0 64px;
+  }
+  @media (max-width: $phone-max-size) {
+    padding: 0 16px;
+  }
 
   &__heading {
     font-weight: 600;
@@ -75,6 +122,15 @@ body {
     padding-bottom: 16px;
     border-bottom: 2px solid rgba(203, 210, 217, 0.5);
     margin-bottom: 128px;
+
+    @media (max-width: $tablet-max-size) {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    @media (max-width: $phone-max-size) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 }
 
@@ -83,8 +139,15 @@ body {
   justify-content: space-between;
   margin-bottom: 128px;
 
+  @media (max-width: $tablet-max-size) {
+    display: block;
+  }
+
   &--wtl {
     margin-bottom: 168px;
+    @media (max-width: $phone-max-size) {
+      margin-bottom: 80px;
+    }
   }
 
   &__header {
@@ -94,6 +157,12 @@ body {
     font-size: 32px;
     line-height: 44px;
     color: #171f3f;
+
+    @media (max-width: $phone-max-size) {
+      padding-top: 8px;
+      font-size: 22px;
+      line-height: 32px;
+    }
   }
 
   &__list {
@@ -108,6 +177,18 @@ body {
     color: #52606d;
     list-style: none;
     width: 50%;
+
+    @media (max-width: $tablet-max-size) {
+      width: 100%;
+    }
+
+    @media (max-width: $phone-max-size) {
+      grid-template-columns: 1fr;
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 36px;
+      padding-top: 8px;
+    }
   }
 
   &__list-item {
@@ -115,16 +196,28 @@ body {
       content: "";
       padding: 0 0 0 30px;
       background: url(../assets/img/check-circle-wk.svg) no-repeat 0 3px;
+      @media (max-width: $phone-max-size) {
+        padding: 0 0 0 24px;
+        background: url(../assets/img/check-circle-wk.svg) no-repeat 0 2px;
+      }
     }
     &--ks:before {
       content: "";
       padding: 0 0 0 30px;
       background: url(../assets/img/check-circle-ks.svg) no-repeat 0 3px;
+      @media (max-width: $phone-max-size) {
+        padding: 0 0 0 24px;
+        background: url(../assets/img/check-circle-ks.svg) no-repeat 0 2px;
+      }
     }
     &--wtl:before {
       content: "";
       padding: 0 0 0 30px;
       background: url(../assets/img/check-circle-wtl.svg) no-repeat 0 3px;
+      @media (max-width: $phone-max-size) {
+        padding: 0 0 0 24px;
+        background: url(../assets/img/check-circle-wtl.svg) no-repeat 0 2px;
+      }
     }
   }
 
@@ -135,6 +228,9 @@ body {
     border: 2px solid #06c847;
     width: 80px;
     border-radius: 8px;
+    @media (max-width: $phone-max-size) {
+      width: 40px;
+    }
   }
   &--ks:before {
     display: inline-block;
@@ -143,6 +239,9 @@ body {
     border: 2px solid #653cad;
     width: 80px;
     border-radius: 8px;
+    @media (max-width: $phone-max-size) {
+      width: 40px;
+    }
   }
   &--wtl:before {
     display: inline-block;
@@ -151,6 +250,9 @@ body {
     border: 2px solid #2251cc;
     width: 80px;
     border-radius: 8px;
+    @media (max-width: $phone-max-size) {
+      width: 40px;
+    }
   }
 }
 
@@ -159,13 +261,30 @@ body {
   padding: 0 128px;
   padding-bottom: 104px;
 
+  @media (max-width: $tablet-max-size) {
+    padding: 0 64px;
+    padding-bottom: 104px;
+  }
+  @media (max-width: $phone-max-size) {
+    padding: 0 16px;
+    padding-bottom: 64px;
+  }
+
   &__heading {
     padding-top: 128px;
-    margin: 0 0 16 0;
+    margin: 0 0 16px 0;
     font-weight: 600;
     font-size: 36px;
     line-height: 48px;
     color: #171f3f;
+
+    @media (max-width: $phone-max-size) {
+      padding-top: 80px;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
   }
 
   &__description {
@@ -176,6 +295,16 @@ body {
     color: #52606d;
     padding-right: 32px;
     margin-bottom: 64px;
+
+    @media (max-width: $tablet-max-size) {
+      width: 100%;
+    }
+
+    @media (max-width: $phone-max-size) {
+      text-align: center;
+      padding-right: 0px;
+      margin-bottom: 32px;
+    }
   }
 
   &__list {
@@ -195,14 +324,29 @@ body {
   border-radius: 8px;
   margin-bottom: 24px;
 
+  @media (max-width: $tablet-max-size) {
+    width: 100%;
+  }
+  @media (max-width: $phone-max-size) {
+    margin-bottom: 16px;
+  }
+
   &__content {
     padding: 48px;
+
+    @media (max-width: $phone-max-size) {
+      padding: 32px;
+    }
   }
 
   &__image {
     max-width: 48px;
     height: auto;
     margin-bottom: 16px;
+
+    @media (max-width: $phone-max-size) {
+      max-width: 40px;
+    }
   }
 
   &__heading {
@@ -211,6 +355,12 @@ body {
     font-size: 20px;
     line-height: 36px;
     color: #171f3f;
+
+    @media (max-width: $phone-max-size) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
   }
 
   &__description {
@@ -219,6 +369,11 @@ body {
     font-size: 18px;
     line-height: 32px;
     color: #52606d;
+
+    @media (max-width: $phone-max-size) {
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__links {
@@ -227,6 +382,10 @@ body {
     justify-content: flex-end;
     border-radius: 8px;
     padding: 16px 48px;
+
+    @media (max-width: $phone-max-size) {
+      padding: 10px 32px;
+    }
   }
 
   &__link {
@@ -237,10 +396,27 @@ body {
     text-decoration: none;
     margin-left: 8px;
 
+    @media (max-width: $phone-max-size) {
+      font-size: 14px;
+      line-height: 28px;
+      margin-left: 6px;
+    }
+
     &--demo:after {
       content: "";
       border: 1px solid #cbd2d9;
       margin: 0 24px;
+
+      @media (max-width: $phone-max-size) {
+        margin: 0 16px;
+      }
+    }
+  }
+
+  &__icon {
+    @media (max-width: $phone-max-size) {
+      width: 20px;
+      height: auto;
     }
   }
 }
@@ -250,12 +426,28 @@ body {
   padding: 128px;
   color: white;
 
+  @media (max-width: $tablet-max-size) {
+    padding: 120px 64px;
+    
+  }
+  @media (max-width: $phone-max-size) {
+    padding: 120px 16px;
+  }
+
   &__heading {
     margin-bottom: 16px;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
     padding-top: 24px;
+    margin-top: 0;
+
+    @media (max-width: $phone-max-size) {
+      margin-bottom: 8px;
+      font-size: 24px;
+      line-height: 32px;
+      padding-top: 8px;
+    }
   }
 
   &__heading-container:before {
@@ -265,6 +457,10 @@ body {
     border: 2px solid #0593fb;
     width: 80px;
     border-radius: 8px;
+
+    @media (max-width: $phone-max-size) {
+      width: 40px;
+    }
   }
 
   &__description {
@@ -273,10 +469,20 @@ body {
     font-size: 20px;
     line-height: 36px;
     margin-bottom: 24px;
+
+    @media (max-width: $phone-max-size) {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__socials {
     margin-bottom: 48px;
+
+    @media (max-width: $phone-max-size) {
+      margin-bottom: 32px;
+    }
   }
 
   &__social-link {
