@@ -141,6 +141,7 @@ body {
 
   @media (max-width: $tablet-max-size) {
     display: block;
+    margin-bottom: 80px;
   }
 
   &--wtl {
@@ -304,6 +305,8 @@ body {
       text-align: center;
       padding-right: 0px;
       margin-bottom: 32px;
+      font-size: 14px;
+      line-height: 26px;
     }
   }
 
@@ -428,7 +431,6 @@ body {
 
   @media (max-width: $tablet-max-size) {
     padding: 120px 64px;
-    
   }
   @media (max-width: $phone-max-size) {
     padding: 120px 16px;
